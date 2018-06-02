@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         MyRequestQueue = Volley.newRequestQueue(this);
-        String url = "http://192.168.0.102:5000/cron_job"; //find and insert url.
+        String url = "http://192.168.43.94/cron_job"; //find and insert url.
         MyStringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
